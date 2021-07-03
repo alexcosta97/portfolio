@@ -14,7 +14,7 @@ export class NavComponent implements AfterViewInit {
   ngAfterViewInit(): void {
   }
 
-  openMenu(): void {
+  buttonClick(): void {
     this.isMenuOpen = !this.isMenuOpen;
     if(this.isMenuOpen) disableBodyScroll(this.navbar.nativeElement);
     else enableBodyScroll(this.navbar.nativeElement);
