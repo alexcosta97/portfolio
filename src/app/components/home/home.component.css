@@ -16,6 +16,34 @@ p{
   line-height: .875rem;
 }
 
+.social-links-container{
+  margin: 1.25rem 0 0;
+}
+
+.social-links-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link:first-child{
+  margin: 0
+}
+
+.social-link{
+  margin: 0 0 0 .9375rem;
+  padding: 0;
+}
+
+.social-link a{
+  display: block;
+  color: #666;
+}
+
 .homepage-section{
   margin: 3.75rem 0 0;
 }
@@ -41,5 +69,18 @@ p{
 
   .homepage-column{
     width: 50%;
+  }
+
+  .social-links-container{
+    margin: .9375rem 0 0;
+  }
+
+  .social-link{
+    margin: 0 0 0 .625rem;
+  }
+
+  .social-link a{
+    height: 1.25rem;
+    width: 1.25rem;
   }
 }
