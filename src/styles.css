@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+.site-body {
+  max-width: 34.375rem;
+  padding: 0 1.25rem;
+}
+
+.site-body-homepage {
+  margin: 1.875rem auto 3.75rem;
+  max-width: 57.875rem;
+}
+
+.content-body{
+  margin: 2rem 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-body, .site-body-homepage {
+    margin: 3.75rem auto;
+  }
+}
