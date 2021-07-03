@@ -84,3 +84,13 @@ p{
     width: 1.25rem;
   }
 }
+
+@media only screen and (max-width: 991px){
+  .container{
+    max-width: 90%;
+  }
+
+  .intro-text-container{
+    margin-top: 2rem;
+  }
+}
