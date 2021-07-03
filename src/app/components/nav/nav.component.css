@@ -1,0 +1,35 @@
+.navbar-brand {
+  font-family: "Caveat";
+  letter-spacing: -0.20px;
+  font-size: 30px;
+  font-weight: light;
+}
+
+.navbar-collapse{
+  text-align: center;
+}
+
+.navbar-dark .navbar-toggler{
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width: 991px){
+  .mobile-menu-show{
+    overflow: hidden;
+  }
+
+  .navbar-nav{
+    height: 100vh;
+  }
+
+  .nav-item:first-of-type{
+    margin-top: 3rem;
+  }
+  .nav-item{
+    margin-top: 2rem;
+  }
+}
