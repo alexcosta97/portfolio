@@ -2,13 +2,44 @@ a{
   text-decoration: none;
 }
 
+p{
+  margin: .625rem 0 0;
+  line-height: 1.75rem;
+  letter-spacing: -.02125rem;
+}
+
+.heading-small{
+  color: #898989;
+  font-size: .875rem;
+  font-weight: 400;
+  letter-spacing: -.0175rem;
+  line-height: .875rem;
+}
+
+.homepage-section{
+  margin: 3.75rem 0 0;
+}
+
 .site-body-homepage {
   margin: 1.875rem auto 3.75rem;
   max-width: 57.875rem;
 }
 
+.rounded{
+  border-radius: .25rem;
+  box-shadow: 0 0.0625rem 0.625rem 0 rgb(0 0 0 / 10%);
+}
+
 @media (min-width: 992px) {
   .site-body-homepage {
     margin: 3.75rem auto;
+  }
+
+  .homepage-section{
+    display: flex;
+  }
+
+  .homepage-column{
+    width: 50%;
   }
 }
