@@ -8,3 +8,9 @@
     max-width: 85%;
   }
 }
+
+@media (min-width: 992px) {
+  .site-body{
+    margin: 3.75rem auto;
+  }
+}

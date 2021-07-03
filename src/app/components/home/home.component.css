@@ -1,0 +1,14 @@
+a{
+  text-decoration: none;
+}
+
+.site-body-homepage {
+  margin: 1.875rem auto 3.75rem;
+  max-width: 57.875rem;
+}
+
+@media (min-width: 992px) {
+  .site-body-homepage {
+    margin: 3.75rem auto;
+  }
+}
