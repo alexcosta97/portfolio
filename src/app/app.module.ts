@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AboutComponent } from './components/about/about.component';
 import { BlogPageComponent } from './components/blog-page/blog-page.component';
+import { InConstructionPageComponent } from './components/in-construction-page/in-construction-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BlogPageComponent } from './components/blog-page/blog-page.component';
     HomeComponent,
     PageNotFoundComponent,
     AboutComponent,
-    BlogPageComponent
+    BlogPageComponent,
+    InConstructionPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
