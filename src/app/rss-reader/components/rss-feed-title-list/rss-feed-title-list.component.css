@@ -1,0 +1,14 @@
+li{
+    padding-bottom: 0.825rem;
+}
+
+li:nth-of-type(n+2){
+    border-top: .0625rem solid #e2e2e2;
+    padding: .825rem 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
