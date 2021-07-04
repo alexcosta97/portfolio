@@ -1,22 +1,27 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import { Component, ViewChild, ElementRef, OnDestroy } from '@angular/core';
+import { clearAllBodyScrollLocks, disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
-export class NavComponent implements AfterViewInit {
+export class NavComponent implements OnDestroy {
   constructor(private elementRef: ElementRef) { }
   @ViewChild('nav') navbar!: ElementRef;
   isMenuOpen = false;
 
-  ngAfterViewInit(): void {
+  openMenu(): void{
+    this.isMenuOpen = true;
+    disableBodyScroll(this.navbar.nativeElement);
   }
 
-  buttonClick(): void {
-    this.isMenuOpen = !this.isMenuOpen;
-    if(this.isMenuOpen) disableBodyScroll(this.navbar.nativeElement);
-    else enableBodyScroll(this.navbar.nativeElement);
+  closeMenu(): void{
+    this.isMenuOpen = false;
+    enableBodyScroll(this.navbar.nativeElement);
+  }
+
+  ngOnDestroy(): void {
+    clearAllBodyScrollLocks();
   }
 }

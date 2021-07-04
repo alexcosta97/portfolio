@@ -15,7 +15,7 @@
       aria-controls="navbarSupportedContent"
       aria-expanded="false"
       aria-label="Toggle navigation"
-      (click)="buttonClick()"
+      (click)="isMenuOpen ? closeMenu() : openMenu()"
     >
       <span
         [class.navbar-toggler-icon]="!isMenuOpen"
@@ -28,9 +28,9 @@
           <a
             class="nav-link"
             routerLink="/blog"
-            data-bs-toggle="collapse"
+            data-bs-toggle.collapse="collapse"
             data-bs-target="#nav"
-            (click)="buttonClick()"
+            (click)="closeMenu()"
             >Blog</a
           >
         </li>
@@ -40,7 +40,7 @@
             routerLink="/projects"
             data-bs-toggle="collapse"
             data-bs-target="#nav"
-            (click)="buttonClick()"
+            (click)="closeMenu()"
             >Projects</a
           >
         </li>
@@ -51,7 +51,7 @@
             routerLinkActive="active"
             data-bs-toggle="collapse"
             data-bs-target="#nav"
-            (click)="buttonClick()"
+            (click)="closeMenu()"
             >About</a
           >
         </li>
@@ -61,7 +61,7 @@
             routerLink="contact"
             data-bs-toggle="collapse"
             data-bs-target="#nav"
-            (click)="buttonClick()"
+            (click)="closeMenu()"
             >Contact</a
           >
         </li>
