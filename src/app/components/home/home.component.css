@@ -58,9 +58,18 @@ p{
   box-shadow: 0 0.0625rem 0.625rem 0 rgb(0 0 0 / 10%);
 }
 
-rss-feed-title-list{
+rss-feed-title-list, .column-list{
   font-size: 0.9rem;
   line-height: 1.375rem;
+}
+
+.column-list{
+  list-style: none;
+  padding: 0;
+}
+
+.column-list li{
+  margin-bottom: 0.5rem;
 }
 
 .column-bottom-link{

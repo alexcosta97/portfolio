@@ -51,12 +51,18 @@
         [feedUrls]="'https://medium.com/feed/@alexandrepcosta'"
         [maxItems]="5"
       ></rss-feed-title-list>
-      <a class="fw-bold column-bottom-link" href="https://alexandrepcosta.medium.com"
+      <a class="fw-bold column-bottom-link" routerLink="/blog"
         >Check out more here <i class="bi-arrow-right-short"></i
       ></a>
     </div>
     <div class="homepage-column">
       <h2 class="heading-small">Things I've Been Working On</h2>
+      <ul class="column-list">
+        <li>My personal website (which you are currently visiting)</li>
+        <li>A script to automate the setup of a new laptop (or when I decide to erase the contents of my current laptop)</li>
+        <li>An error handler for <a href="https://expressjs.com/">express</a> (to help me everyday in my work)</li>
+      </ul>
+      <a class="column-bottom-link" routerLink="/now">What I'm up to now <i class="bi-arrow-right-short"></i></a>
     </div>
   </div>
 </div>
