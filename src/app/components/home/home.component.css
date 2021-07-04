@@ -93,4 +93,8 @@ p{
   .intro-text-container{
     margin-top: 2rem;
   }
+
+  .social-link a{
+    font-size: 1.5rem;
+  }
 }
