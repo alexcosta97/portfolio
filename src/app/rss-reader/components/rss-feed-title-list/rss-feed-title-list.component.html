@@ -1,4 +1,4 @@
-<ul *ngIf="isTitleList">
+<ul>
     <li *ngFor="let feed of feeds | slice:0:maxItems">
         <a [href]="feed.link">{{feed.title}}</a>
     </li>

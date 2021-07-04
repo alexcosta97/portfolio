@@ -9,7 +9,6 @@ import { RssFeedService } from '../../services/rss-feed.service';
 })
 export class RssFeedTitleListComponent implements OnInit {
   @Input() feedUrls!: string;
-  @Input() isTitleList!: boolean;
   @Input() maxItems: number = 5;
   feeds: Array<FeedEntry>;
 
@@ -18,18 +17,17 @@ export class RssFeedTitleListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('Started component.');
     this.loadFeeds();
   }
 
   loadFeeds(): void {
     const urls = this.feedUrls.trim().split(',');
 
-    urls.forEach((url) => {
+    urls.forEach((url, index) => {
       url = encodeURIComponent(url);
       this.rssService.getFeedContent(url).subscribe((feed) => {
         this.feeds = this.feeds.concat(feed.items);
-        console.log(feed.items);
+        console.log(`Loaded Feeds from ${urls[index]}`);
       });
     });
   }
