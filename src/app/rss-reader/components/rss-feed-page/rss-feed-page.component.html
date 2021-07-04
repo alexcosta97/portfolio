@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let feed of feeds | slice:0:maxItems">
+    <a [href]="feed.link" class="title-link">{{feed.title}}</a>
+    <div [innerHtml]="feed.description | stripHtml" class="description-container"></div>
+  </li>
+</ul>
