@@ -2,29 +2,36 @@
   <div class="row align-items-center">
     <div class="col-sm-auto text-center pb-2 pb-lg-0">
       <img
-      src="https://cdn-images-1.medium.com/fit/c/150/150/2*tRKQlJMmyUSQtBLYJ_2dNg.jpeg"
-      alt="Alex Costa (Me)"
-      width="175px"
-      height="175px"
-      class="rounded"
-    />
+        src="https://cdn-images-1.medium.com/fit/c/150/150/2*tRKQlJMmyUSQtBLYJ_2dNg.jpeg"
+        alt="Alex Costa (Me)"
+        width="175px"
+        height="175px"
+        class="rounded"
+      />
     </div>
     <div class="col text-justify intro-text-container">
       <h2 class="heading-small">Hi! 👋</h2>
       <p>
-        I'm Alex Costa and I'm a Software Engineer. I'm
-        passionate about <span class="fw-bold">using technology</span> to improve
-        everyday life, and I also enjoy <span class="fw-bold">sharing my life experiences and
-        lessons</span> in writting.<br>
+        I'm Alex Costa and I'm a Software Engineer. I'm passionate about
+        <span class="fw-bold">using technology</span> to improve everyday life,
+        and I also enjoy
+        <span class="fw-bold">sharing my life experiences and lessons</span> in
+        writting.<br />
         <a routerLink="/about">More about me</a>
       </p>
       <div class="social-links-container">
         <ul class="social-links-list">
           <li class="social-link">
-            <a class="bi-linkedin" href="https://www.linkedin.com/in/alex-costa-045065134/"></a>
+            <a
+              class="bi-linkedin"
+              href="https://www.linkedin.com/in/alex-costa-045065134/"
+            ></a>
           </li>
           <li class="social-link">
-            <a class="bi-instagram" href="https://www.instagram.com/coding_barista/"></a>
+            <a
+              class="bi-instagram"
+              href="https://www.instagram.com/coding_barista/"
+            ></a>
           </li>
           <li class="social-link">
             <a class="bi-twitter" href="https://twitter.com/alexcosta9716"></a>
@@ -40,7 +47,14 @@
   <div class="homepage-section">
     <div class="homepage-column">
       <h2 class="heading-small">Recent Musings</h2>
-      <app-rss-feed [isTitleList]="true" [feedUrls]="'https://medium.com/feed/@alexandrepcosta'"></app-rss-feed>
+      <rss-feed-title-list
+        [isTitleList]="true"
+        [feedUrls]="'https://medium.com/feed/@alexandrepcosta'"
+        [maxItems]="5"
+      ></rss-feed-title-list>
+      <a class="fw-bold column-bottom-link" href="https://alexandrepcosta.medium.com"
+        >Check out more here <i class="bi-arrow-right-short"></i
+      ></a>
     </div>
     <div class="homepage-column">
       <h2 class="heading-small">Things I've Been Working On</h2>

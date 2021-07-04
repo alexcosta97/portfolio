@@ -45,7 +45,7 @@ p{
 }
 
 .homepage-section{
-  margin: 3.75rem 0 0;
+  margin: 2rem 0 0;
 }
 
 .site-body-homepage {
@@ -58,6 +58,18 @@ p{
   box-shadow: 0 0.0625rem 0.625rem 0 rgb(0 0 0 / 10%);
 }
 
+rss-feed-title-list{
+  font-size: 0.9rem;
+  line-height: 1.375rem;
+}
+
+.column-bottom-link{
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
 @media (min-width: 992px) {
   .site-body-homepage {
     margin: 3.75rem auto;
@@ -65,10 +77,16 @@ p{
 
   .homepage-section{
     display: flex;
+    margin: 3.75rem 0 0;
   }
 
   .homepage-column{
     width: 50%;
+    margin: 0 .9375rem 0 0;
+  }
+
+  .homepage-column:last-child{
+    margin: 0 0 0 .9375rem;
   }
 
   .social-links-container{
@@ -96,5 +114,14 @@ p{
 
   .social-link a{
     font-size: 1.5rem;
+  }
+
+  .homepage-column:first-child{
+    margin-bottom: 2rem;
+  }
+
+
+  .homepage-column:last-child{
+    margin-top: 2rem;
   }
 }
