@@ -2,8 +2,8 @@
   <div class="row align-items-center">
     <div class="col-sm-auto text-center pb-2 pb-lg-0">
       <img
-      src="https://s3.eu-west-2.amazonaws.com/resources.alexcosta.dev/images/profilePlaceholder.jpg"
-      alt="Fake Profile Picture"
+      src="https://cdn-images-1.medium.com/fit/c/150/150/2*tRKQlJMmyUSQtBLYJ_2dNg.jpeg"
+      alt="Alex Costa (Me)"
       width="175px"
       height="175px"
       class="rounded"
@@ -40,6 +40,7 @@
   <div class="homepage-section">
     <div class="homepage-column">
       <h2 class="heading-small">Recent Musings</h2>
+      <app-rss-feed [isTitleList]="true" [feedUrls]="'https://medium.com/feed/@alexandrepcosta'"></app-rss-feed>
     </div>
     <div class="homepage-column">
       <h2 class="heading-small">Things I've Been Working On</h2>
